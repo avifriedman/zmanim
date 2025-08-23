@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שעון זמנים</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading">טוען הגדרות מרחוק...</div>
+    <div id="error-message" class="hidden">
+        <h1>שגיאה בטעינת ההגדרות</h1>
+        <p>ודא שהזנת GIST ID נכון בקובץ app.js ושה-Gist מכיל קובץ בשם config.json.</p>
+    </div>
+
+    <div id="clock-view" class="clock-container hidden">
+        <div id="main-display" class="digital-clock"></div>
+        <div id="secondary-display" class="hidden">
+            <span id="current-time-small"></span> | <span id="sunrise-time-small"></span>
+        </div>
+        <div id="hebrew-date" class="hebrew-date"></div>
+        <hr>
+        <div id="zmanim-list"></div>
+    </div>
+
+    <!-- ספריות חיצוניות -->
+    <script src="https://unpkg.com/hebcal@3/dist/hebcal.min.js"></script>
+    
+    <!-- קובץ הלוגיקה שלנו -->
+    <script src="app.js"></script>
+</body>
+</html>
