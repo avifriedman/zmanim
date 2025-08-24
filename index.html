@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="loading">טוען הגדרות מרחוק...</div>
+    <div id="loading">טוען נתונים...</div>
     <div id="error-message" class="hidden">
-        <h1>שגיאה בטעינת ההגדרות</h1>
-        <p>ודא שהזנת GIST ID נכון בקובץ app.js ושה-Gist מכיל קובץ בשם config.json.</p>
+        <h1>שגיאה בטעינת הקובץ sunrise_data.csv</h1>
+        <p>ודא שהקובץ קיים במאגר שלך ובפורמט תקין.</p>
     </div>
 
     <div id="clock-view" class="clock-container hidden">
@@ -27,7 +27,8 @@
     </div>
 
     <!-- ספריות חיצוניות -->
-    <script src="https://unpkg.com/hebcal@3/dist/hebcal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hebcal@3/dist/hebcal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
     
     <!-- קובץ הלוגיקה שלנו -->
     <script src="app.js"></script>
